@@ -8,6 +8,7 @@
 # Before the first release, at least the following directory and file structure must be created in the target directory:
 # shared/public/fileadmin/ -> the contents of the local fileadmin folder must be uploaded here.
 # shared/public/typo3conf/LocalConfiguration.php -> copy of the local LocalConfiguration.php. This way different settings can be stored later on the remote server.
+# ATTENTION: Do not exclude *.sql files in general, because there are some sql files in core sys-ext that must be present on the target server!
 
 # Variables
 LOCAL_DIR="$(pwd)"
